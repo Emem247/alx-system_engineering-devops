@@ -1,5 +1,2 @@
 #!/bin/bash
-water_num=$(echo $WATER | tr "a-z" "0-9")
-stir_num=$(echo $STIR | tr "a-z" "0-9")
-result=$((water_num + stir_num))
-echo $(printf "%d" $result | tr "0-9" "bestchol")
+$(echo $WATER | tr "a-z" "0-9") $(echo $STIR | tr "a-z" "0-9") $((water_num + stir_num)) echo$(printf "%d" $result | tr "0-9" "bestchol") 
